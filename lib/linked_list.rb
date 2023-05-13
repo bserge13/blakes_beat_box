@@ -7,14 +7,15 @@ class LinkedList
                 :to_string
     def initialize
         @head = nil
-        @data = [data]
+        @data = []
+        @next_node = next_node 
     end
-    def append(sound)
-        @data << sound 
+    def append(data)
+        @data << data 
     end
-    def next_node
-        # code to be written
-    end
+    # def next_node
+    #     # code to be written
+    # end
     def count
         @data.count 
     end

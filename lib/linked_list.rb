@@ -23,8 +23,10 @@ class LinkedList
             while current_node.next_node != nil
                 current_node = current_node.next_node 
             end
-            current_node.next = new_node
+            current_node.next_node = new_node
         end
+        @data << new_node(data)
+        "#{data}"
     end
     def prepend(data)
         if list.is_empty?
@@ -36,7 +38,6 @@ class LinkedList
         end
     end 
     def insert(index, data)
-        # @data << data(0) 
         list.data.insert(0,data)
     end
     def count

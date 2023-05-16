@@ -36,9 +36,11 @@ class LinkedList
             current_node.next_node = @head
             @head = current_node
         end
+        # set to index position 0 in data array 
     end 
     def insert(index, data)
         list.data.insert(0,data)
+        # @data << 
     end
     def count
         if list.is_empty?

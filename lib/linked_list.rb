@@ -3,17 +3,15 @@ class LinkedList
                 :data,
                 :next_node, 
     def initialize
-        @head = head 
-        @data = []
-        @next_node = next_node
+        @head = nil 
+        # @data = []
+        # @next_node = next_node
     end
+
     def is_empty? 
-        if @head == nil
-            true
-        else 
-            false
-        end
+        @head.nil?
     end
+
     def append(data)
         if list.is_empty?
             @head = Node.new(data)
@@ -28,6 +26,7 @@ class LinkedList
         @data << new_node(data)
         "#{data}"
     end
+
     def prepend(data)
         if list.is_empty?
             @head = Node.new(data)
@@ -38,10 +37,12 @@ class LinkedList
         end
         # set to index position 0 in data array 
     end 
+
     def insert(index, data)
         list.data.insert(0,data)
         # @data << 
     end
+
     def count
         if list.is_empty?
             count = 0
@@ -54,6 +55,7 @@ class LinkedList
             end 
         end
     end
+    
     def to_string
         string = []
         current_node = @head

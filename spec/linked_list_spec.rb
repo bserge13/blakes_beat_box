@@ -16,7 +16,7 @@ RSpec.describe LinkedList do
 
         list.append("doop")
         expect(list.append("doop").to eq("doop"))
-        # expect(list.data).to eq("doop")
+        # expect(list.head.data).to eq("doop")
     end 
     it 'checks for next node from head' do
         list = LinkedList.new 
